@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */; };
+		C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */; };
+		C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */; };
+		C6BC5D6D23B1D4F800FDE0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BC5D6C23B1D4F800FDE0E9 /* Assets.xcassets */; };
+		C6BC5D7023B1D4F800FDE0E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BC5D6F23B1D4F800FDE0E9 /* Preview Assets.xcassets */; };
+		C6BC5D7323B1D4F800FDE0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BC5D7123B1D4F800FDE0E9 /* LaunchScreen.storyboard */; };
+		C6BC5D7E23B1D4F800FDE0E9 /* FluminusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D7D23B1D4F800FDE0E9 /* FluminusTests.swift */; };
+		C6BC5D8923B1D4F800FDE0E9 /* FluminusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D8823B1D4F800FDE0E9 /* FluminusUITests.swift */; };
+		C6BC5D9923B1E60D00FDE0E9 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = C6BC5D9823B1E60D00FDE0E9 /* KeychainAccess */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6BC5D7A23B1D4F800FDE0E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BC5D5B23B1D4F500FDE0E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BC5D6223B1D4F500FDE0E9;
+			remoteInfo = Fluminus;
+		};
+		C6BC5D8523B1D4F800FDE0E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BC5D5B23B1D4F500FDE0E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BC5D6223B1D4F500FDE0E9;
+			remoteInfo = Fluminus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluminus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6BC5D6C23B1D4F800FDE0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6BC5D6F23B1D4F800FDE0E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6BC5D7223B1D4F800FDE0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6BC5D7423B1D4F800FDE0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BC5D7923B1D4F800FDE0E9 /* FluminusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FluminusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BC5D7D23B1D4F800FDE0E9 /* FluminusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluminusTests.swift; sourceTree = "<group>"; };
+		C6BC5D7F23B1D4F800FDE0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BC5D8423B1D4F800FDE0E9 /* FluminusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FluminusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BC5D8823B1D4F800FDE0E9 /* FluminusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluminusUITests.swift; sourceTree = "<group>"; };
+		C6BC5D8A23B1D4F800FDE0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6BC5D6023B1D4F500FDE0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BC5D9923B1E60D00FDE0E9 /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BC5D7623B1D4F800FDE0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BC5D8123B1D4F800FDE0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6BC5D5A23B1D4F500FDE0E9 = {
+			isa = PBXGroup;
+			children = (
+				C6BC5D6523B1D4F500FDE0E9 /* Fluminus */,
+				C6BC5D7C23B1D4F800FDE0E9 /* FluminusTests */,
+				C6BC5D8723B1D4F800FDE0E9 /* FluminusUITests */,
+				C6BC5D6423B1D4F500FDE0E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6BC5D6423B1D4F500FDE0E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */,
+				C6BC5D7923B1D4F800FDE0E9 /* FluminusTests.xctest */,
+				C6BC5D8423B1D4F800FDE0E9 /* FluminusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6BC5D6523B1D4F500FDE0E9 /* Fluminus */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC5D9623B1D5AD00FDE0E9 /* Authentication */,
+				C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */,
+				C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */,
+				C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */,
+				C6BC5D6C23B1D4F800FDE0E9 /* Assets.xcassets */,
+				C6BC5D7123B1D4F800FDE0E9 /* LaunchScreen.storyboard */,
+				C6BC5D7423B1D4F800FDE0E9 /* Info.plist */,
+				C6BC5D6E23B1D4F800FDE0E9 /* Preview Content */,
+			);
+			path = Fluminus;
+			sourceTree = "<group>";
+		};
+		C6BC5D6E23B1D4F800FDE0E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC5D6F23B1D4F800FDE0E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6BC5D7C23B1D4F800FDE0E9 /* FluminusTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC5D7D23B1D4F800FDE0E9 /* FluminusTests.swift */,
+				C6BC5D7F23B1D4F800FDE0E9 /* Info.plist */,
+			);
+			path = FluminusTests;
+			sourceTree = "<group>";
+		};
+		C6BC5D8723B1D4F800FDE0E9 /* FluminusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC5D8823B1D4F800FDE0E9 /* FluminusUITests.swift */,
+				C6BC5D8A23B1D4F800FDE0E9 /* Info.plist */,
+			);
+			path = FluminusUITests;
+			sourceTree = "<group>";
+		};
+		C6BC5D9623B1D5AD00FDE0E9 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6BC5D6223B1D4F500FDE0E9 /* Fluminus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BC5D8D23B1D4F800FDE0E9 /* Build configuration list for PBXNativeTarget "Fluminus" */;
+			buildPhases = (
+				C6BC5D5F23B1D4F500FDE0E9 /* Sources */,
+				C6BC5D6023B1D4F500FDE0E9 /* Frameworks */,
+				C6BC5D6123B1D4F500FDE0E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fluminus;
+			packageProductDependencies = (
+				C6BC5D9823B1E60D00FDE0E9 /* KeychainAccess */,
+			);
+			productName = Fluminus;
+			productReference = C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6BC5D7823B1D4F800FDE0E9 /* FluminusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BC5D9023B1D4F800FDE0E9 /* Build configuration list for PBXNativeTarget "FluminusTests" */;
+			buildPhases = (
+				C6BC5D7523B1D4F800FDE0E9 /* Sources */,
+				C6BC5D7623B1D4F800FDE0E9 /* Frameworks */,
+				C6BC5D7723B1D4F800FDE0E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BC5D7B23B1D4F800FDE0E9 /* PBXTargetDependency */,
+			);
+			name = FluminusTests;
+			productName = FluminusTests;
+			productReference = C6BC5D7923B1D4F800FDE0E9 /* FluminusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6BC5D8323B1D4F800FDE0E9 /* FluminusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BC5D9323B1D4F800FDE0E9 /* Build configuration list for PBXNativeTarget "FluminusUITests" */;
+			buildPhases = (
+				C6BC5D8023B1D4F800FDE0E9 /* Sources */,
+				C6BC5D8123B1D4F800FDE0E9 /* Frameworks */,
+				C6BC5D8223B1D4F800FDE0E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BC5D8623B1D4F800FDE0E9 /* PBXTargetDependency */,
+			);
+			name = FluminusUITests;
+			productName = FluminusUITests;
+			productReference = C6BC5D8423B1D4F800FDE0E9 /* FluminusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6BC5D5B23B1D4F500FDE0E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Julius;
+				TargetAttributes = {
+					C6BC5D6223B1D4F500FDE0E9 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C6BC5D7823B1D4F800FDE0E9 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C6BC5D6223B1D4F500FDE0E9;
+					};
+					C6BC5D8323B1D4F800FDE0E9 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C6BC5D6223B1D4F500FDE0E9;
+					};
+				};
+			};
+			buildConfigurationList = C6BC5D5E23B1D4F500FDE0E9 /* Build configuration list for PBXProject "Fluminus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6BC5D5A23B1D4F500FDE0E9;
+			packageReferences = (
+				C6BC5D9723B1E60D00FDE0E9 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			productRefGroup = C6BC5D6423B1D4F500FDE0E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6BC5D6223B1D4F500FDE0E9 /* Fluminus */,
+				C6BC5D7823B1D4F800FDE0E9 /* FluminusTests */,
+				C6BC5D8323B1D4F800FDE0E9 /* FluminusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6BC5D6123B1D4F500FDE0E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BC5D7323B1D4F800FDE0E9 /* LaunchScreen.storyboard in Resources */,
+				C6BC5D7023B1D4F800FDE0E9 /* Preview Assets.xcassets in Resources */,
+				C6BC5D6D23B1D4F800FDE0E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BC5D7723B1D4F800FDE0E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BC5D8223B1D4F800FDE0E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6BC5D5F23B1D4F500FDE0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */,
+				C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */,
+				C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BC5D7523B1D4F800FDE0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BC5D7E23B1D4F800FDE0E9 /* FluminusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BC5D8023B1D4F800FDE0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BC5D8923B1D4F800FDE0E9 /* FluminusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6BC5D7B23B1D4F800FDE0E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BC5D6223B1D4F500FDE0E9 /* Fluminus */;
+			targetProxy = C6BC5D7A23B1D4F800FDE0E9 /* PBXContainerItemProxy */;
+		};
+		C6BC5D8623B1D4F800FDE0E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BC5D6223B1D4F500FDE0E9 /* Fluminus */;
+			targetProxy = C6BC5D8523B1D4F800FDE0E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6BC5D7123B1D4F800FDE0E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6BC5D7223B1D4F800FDE0E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6BC5D8B23B1D4F800FDE0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6BC5D8C23B1D4F800FDE0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6BC5D8E23B1D4F800FDE0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Fluminus/Preview Content\"";
+				DEVELOPMENT_TEAM = 6C688DY2VC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Fluminus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.julius.Fluminus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6BC5D8F23B1D4F800FDE0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Fluminus/Preview Content\"";
+				DEVELOPMENT_TEAM = 6C688DY2VC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Fluminus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.julius.Fluminus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6BC5D9123B1D4F800FDE0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C688DY2VC;
+				INFOPLIST_FILE = FluminusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.julius.FluminusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fluminus.app/Fluminus";
+			};
+			name = Debug;
+		};
+		C6BC5D9223B1D4F800FDE0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C688DY2VC;
+				INFOPLIST_FILE = FluminusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.julius.FluminusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fluminus.app/Fluminus";
+			};
+			name = Release;
+		};
+		C6BC5D9423B1D4F800FDE0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C688DY2VC;
+				INFOPLIST_FILE = FluminusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.julius.FluminusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fluminus;
+			};
+			name = Debug;
+		};
+		C6BC5D9523B1D4F800FDE0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C688DY2VC;
+				INFOPLIST_FILE = FluminusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.julius.FluminusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fluminus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6BC5D5E23B1D4F500FDE0E9 /* Build configuration list for PBXProject "Fluminus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BC5D8B23B1D4F800FDE0E9 /* Debug */,
+				C6BC5D8C23B1D4F800FDE0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BC5D8D23B1D4F800FDE0E9 /* Build configuration list for PBXNativeTarget "Fluminus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BC5D8E23B1D4F800FDE0E9 /* Debug */,
+				C6BC5D8F23B1D4F800FDE0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BC5D9023B1D4F800FDE0E9 /* Build configuration list for PBXNativeTarget "FluminusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BC5D9123B1D4F800FDE0E9 /* Debug */,
+				C6BC5D9223B1D4F800FDE0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BC5D9323B1D4F800FDE0E9 /* Build configuration list for PBXNativeTarget "FluminusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BC5D9423B1D4F800FDE0E9 /* Debug */,
+				C6BC5D9523B1D4F800FDE0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6BC5D9723B1E60D00FDE0E9 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6BC5D9823B1E60D00FDE0E9 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6BC5D9723B1E60D00FDE0E9 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C6BC5D5B23B1D4F500FDE0E9 /* Project object */;
+}
