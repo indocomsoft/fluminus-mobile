@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C67C2C0123B1F88A00FDE0E9 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0023B1F88A00FDE0E9 /* Domain.swift */; };
+		C67C2C0423B251A700FDE0E9 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0323B251A700FDE0E9 /* Auth.swift */; };
+		C67C2C0623B252F000FDE0E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0523B252F000FDE0E9 /* Constants.swift */; };
+		C67C2C0923B2632700FDE0E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C67C2C0823B2632700FDE0E9 /* Alamofire */; };
 		C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */; };
 		C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */; };
 		C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */; };
@@ -38,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		C67C2C0023B1F88A00FDE0E9 /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		C67C2C0323B251A700FDE0E9 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		C67C2C0523B252F000FDE0E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluminus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6BC5D9923B1E60D00FDE0E9 /* KeychainAccess in Frameworks */,
+				C67C2C0923B2632700FDE0E9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C67C2C0223B2519400FDE0E9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C67C2C0023B1F88A00FDE0E9 /* Domain.swift */,
+				C67C2C0323B251A700FDE0E9 /* Auth.swift */,
+				C67C2C0523B252F000FDE0E9 /* Constants.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		C6BC5D5A23B1D4F500FDE0E9 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +119,7 @@
 		C6BC5D6523B1D4F500FDE0E9 /* Fluminus */ = {
 			isa = PBXGroup;
 			children = (
-				C6BC5D9623B1D5AD00FDE0E9 /* Authentication */,
+				C67C2C0223B2519400FDE0E9 /* API */,
 				C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */,
 				C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */,
 				C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */,
@@ -141,14 +157,6 @@
 			path = FluminusUITests;
 			sourceTree = "<group>";
 		};
-		C6BC5D9623B1D5AD00FDE0E9 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				C67C2C0023B1F88A00FDE0E9 /* Domain.swift */,
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +177,7 @@
 			name = Fluminus;
 			packageProductDependencies = (
 				C6BC5D9823B1E60D00FDE0E9 /* KeychainAccess */,
+				C67C2C0823B2632700FDE0E9 /* Alamofire */,
 			);
 			productName = Fluminus;
 			productReference = C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */;
@@ -244,6 +253,7 @@
 			mainGroup = C6BC5D5A23B1D4F500FDE0E9;
 			packageReferences = (
 				C6BC5D9723B1E60D00FDE0E9 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				C67C2C0723B2632700FDE0E9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C6BC5D6423B1D4F500FDE0E9 /* Products */;
 			projectDirPath = "";
@@ -325,10 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67C2C0423B251A700FDE0E9 /* Auth.swift in Sources */,
 				C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */,
 				C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */,
 				C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */,
 				C67C2C0123B1F88A00FDE0E9 /* Domain.swift in Sources */,
+				C67C2C0623B252F000FDE0E9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +667,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C67C2C0723B2632700FDE0E9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
 		C6BC5D9723B1E60D00FDE0E9 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
@@ -666,6 +686,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C67C2C0823B2632700FDE0E9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C67C2C0723B2632700FDE0E9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		C6BC5D9823B1E60D00FDE0E9 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C6BC5D9723B1E60D00FDE0E9 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
