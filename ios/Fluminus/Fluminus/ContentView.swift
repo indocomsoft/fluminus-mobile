@@ -9,13 +9,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var domain: Domain = .nusstu
+    @State var username: String = ""
+    @State var password: String = ""
+
     var body: some View {
-        Text("Hello, World!")
+        Form {
+            Picker(selection: $domain, label: Text("Domain")) {
+                ForEach(Domain.allCases) { domain in
+                    Text(domain.rawValue).tag(domain)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            TextField("Username (e.g. e0012345)", text: $username)
+            SecureField("Password", text: $password)
+        }
+        .navigationBarTitle(Text("Login"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView()
+        }
     }
 }

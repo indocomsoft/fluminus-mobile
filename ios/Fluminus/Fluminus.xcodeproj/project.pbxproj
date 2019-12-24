@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C67C2C0123B1F88A00FDE0E9 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0023B1F88A00FDE0E9 /* Domain.swift */; };
 		C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */; };
 		C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */; };
 		C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C67C2C0023B1F88A00FDE0E9 /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluminus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		C6BC5D9623B1D5AD00FDE0E9 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				C67C2C0023B1F88A00FDE0E9 /* Domain.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */,
 				C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */,
 				C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */,
+				C67C2C0123B1F88A00FDE0E9 /* Domain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

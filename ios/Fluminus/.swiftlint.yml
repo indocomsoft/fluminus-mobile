@@ -1,0 +1,8 @@
+disabled_rules:
+  - multiple_closures_with_trailing_closure
+line_length:
+  ignores_comments: true
+identifier_name:
+  excluded:
+    - id
+    - kv
