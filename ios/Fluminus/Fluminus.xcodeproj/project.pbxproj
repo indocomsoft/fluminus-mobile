@@ -11,6 +11,8 @@
 		C67C2C0423B251A700FDE0E9 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0323B251A700FDE0E9 /* Auth.swift */; };
 		C67C2C0623B252F000FDE0E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0523B252F000FDE0E9 /* Constants.swift */; };
 		C67C2C0923B2632700FDE0E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C67C2C0823B2632700FDE0E9 /* Alamofire */; };
+		C67C2C0C23B3312C00FDE0E9 /* AFHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0B23B3312C00FDE0E9 /* AFHelper.swift */; };
+		C67C2C0E23B3329F00FDE0E9 /* FluminusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0D23B3329F00FDE0E9 /* FluminusError.swift */; };
 		C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */; };
 		C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */; };
 		C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */; };
@@ -43,6 +45,8 @@
 		C67C2C0023B1F88A00FDE0E9 /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		C67C2C0323B251A700FDE0E9 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		C67C2C0523B252F000FDE0E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C67C2C0B23B3312C00FDE0E9 /* AFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHelper.swift; sourceTree = "<group>"; };
+		C67C2C0D23B3329F00FDE0E9 /* FluminusError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluminusError.swift; sourceTree = "<group>"; };
 		C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluminus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				C67C2C0023B1F88A00FDE0E9 /* Domain.swift */,
 				C67C2C0323B251A700FDE0E9 /* Auth.swift */,
 				C67C2C0523B252F000FDE0E9 /* Constants.swift */,
+				C67C2C0B23B3312C00FDE0E9 /* AFHelper.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				C6BC5D7123B1D4F800FDE0E9 /* LaunchScreen.storyboard */,
 				C6BC5D7423B1D4F800FDE0E9 /* Info.plist */,
 				C6BC5D6E23B1D4F800FDE0E9 /* Preview Content */,
+				C67C2C0D23B3329F00FDE0E9 /* FluminusError.swift */,
 			);
 			path = Fluminus;
 			sourceTree = "<group>";
@@ -335,8 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67C2C0C23B3312C00FDE0E9 /* AFHelper.swift in Sources */,
 				C67C2C0423B251A700FDE0E9 /* Auth.swift in Sources */,
 				C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */,
+				C67C2C0E23B3329F00FDE0E9 /* FluminusError.swift in Sources */,
 				C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */,
 				C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */,
 				C67C2C0123B1F88A00FDE0E9 /* Domain.swift in Sources */,
@@ -672,7 +680,7 @@
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.9.1;
+				minimumVersion = "5.0.0-rc.3";
 			};
 		};
 		C6BC5D9723B1E60D00FDE0E9 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
