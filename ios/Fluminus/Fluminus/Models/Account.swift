@@ -16,7 +16,10 @@ class Account: ObservableObject {
     private let userDefaultsKey = "username"
     private let keychain = Keychain(service: "vafs")
 
+    private var cancellables = Set<AnyCancellable>()
+
     @Published var isLoggedIn: Bool = false
+    @Published var accessToken: LoginToken?
 
     private var credential: (String, String)? {
         guard let username = UserDefaults.standard.string(forKey: userDefaultsKey),
@@ -29,6 +32,24 @@ class Account: ObservableObject {
 
     private init() {
         isLoggedIn = credential != nil
+        updateAccessToken()
+    }
+
+    func updateAccessToken() {
+        guard let (username, password) = credential else {
+            return
+        }
+        Auth.login(username: username, password: password)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .failure(.unauthorized):
+                    self?.isLoggedIn = false
+                    self?.accessToken = nil
+                default: break
+                }
+            }) { [weak self] in self?.accessToken = $0 }
+            .store(in: &cancellables)
     }
 
     func save(username: String, password: String) -> AnyPublisher<Void, FluminusError> {

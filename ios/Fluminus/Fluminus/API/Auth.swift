@@ -11,17 +11,14 @@ import Combine
 import Foundation
 
 enum Auth {
-    private struct LoginToken: Codable {
-        let accessToken: String
-
-        private enum CodingKeys: String, CodingKey {
-            case accessToken = "access_token"
-        }
-    }
-
     /// Obtains an access token
-    static func login(username: String, password: String) -> AnyPublisher<String, FluminusError> {
-        let credential: Parameters = ["UserName": username, "Password": password, "AuthMethod": "FormsAuthentication"]
+    static func login(username: String, password: String) -> AnyPublisher<LoginToken,
+                                                                          FluminusError> {
+        let credential: Parameters = [
+            "UserName": username,
+            "Password": password,
+            "AuthMethod": "FormsAuthentication",
+        ]
         return AFHelper.request(Constants.vafsURL, method: .post, parameters: credential)
             .flatMap { AFHelper.getRedirectLocation($0) }
             .mapError { error in
@@ -50,7 +47,6 @@ enum Auth {
                                         method: .post, parameters: adfsBody, headers: headers)
             }
             .flatMap { AFHelper.getResponseDecodable($0, of: LoginToken.self) }
-            .map { $0.accessToken }
             .eraseToAnyPublisher()
     }
 }

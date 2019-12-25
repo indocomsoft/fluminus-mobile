@@ -11,18 +11,27 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var account: Account = .shared
+    @ObservedObject var data: LoggedInData = .shared
 
     @State var cancellables = Set<AnyCancellable>()
 
+    @State var modules: [Module] = []
+
     var body: some View {
         NavigationView {
-            Text("Logged in")
-                .navigationBarTitle(Text("Home"))
-                .navigationBarItems(trailing: HStack {
-                    Button(action: self.logout) {
-                        Text("Log out")
-                    }
-                })
+            VStack {
+                Text("Logged in")
+
+                List(data.modules, id: \.id) { module in
+                    Text("\(module.code) \(module.name)")
+                }
+            }
+            .navigationBarTitle(Text("Home"))
+            .navigationBarItems(trailing: HStack {
+                Button(action: self.logout) {
+                    Text("Log out")
+                }
+            })
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

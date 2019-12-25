@@ -17,6 +17,9 @@
 		C67C2C1523B34EE700FDE0E9 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1423B34EE700FDE0E9 /* ActivityIndicator.swift */; };
 		C67C2C1823B362ED00FDE0E9 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1723B362ED00FDE0E9 /* Account.swift */; };
 		C67C2C1B23B3705000FDE0E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1A23B3705000FDE0E9 /* HomeView.swift */; };
+		C67C2C1D23B38CB100FDE0E9 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1C23B38CB100FDE0E9 /* Module.swift */; };
+		C67C2C1F23B38DDC00FDE0E9 /* LoginToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1E23B38DDC00FDE0E9 /* LoginToken.swift */; };
+		C67C2C2123B393D800FDE0E9 /* LoggedInData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C2023B393D800FDE0E9 /* LoggedInData.swift */; };
 		C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */; };
 		C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */; };
 		C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */; };
@@ -55,6 +58,9 @@
 		C67C2C1423B34EE700FDE0E9 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		C67C2C1723B362ED00FDE0E9 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		C67C2C1A23B3705000FDE0E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C67C2C1C23B38CB100FDE0E9 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		C67C2C1E23B38DDC00FDE0E9 /* LoginToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginToken.swift; sourceTree = "<group>"; };
+		C67C2C2023B393D800FDE0E9 /* LoggedInData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInData.swift; sourceTree = "<group>"; };
 		C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluminus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,8 +107,10 @@
 		C67C2C0223B2519400FDE0E9 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C67C2C0323B251A700FDE0E9 /* Auth.swift */,
 				C67C2C0B23B3312C00FDE0E9 /* AFHelper.swift */,
+				C67C2C0323B251A700FDE0E9 /* Auth.swift */,
+				C67C2C1C23B38CB100FDE0E9 /* Module.swift */,
+				C67C2C1E23B38DDC00FDE0E9 /* LoginToken.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			children = (
 				C67C2C0023B1F88A00FDE0E9 /* Domain.swift */,
 				C67C2C1723B362ED00FDE0E9 /* Account.swift */,
+				C67C2C2023B393D800FDE0E9 /* LoggedInData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -394,7 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67C2C0C23B3312C00FDE0E9 /* AFHelper.swift in Sources */,
+				C67C2C2123B393D800FDE0E9 /* LoggedInData.swift in Sources */,
+				C67C2C1D23B38CB100FDE0E9 /* Module.swift in Sources */,
 				C67C2C1823B362ED00FDE0E9 /* Account.swift in Sources */,
+				C67C2C1F23B38DDC00FDE0E9 /* LoginToken.swift in Sources */,
 				C67C2C0423B251A700FDE0E9 /* Auth.swift in Sources */,
 				C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */,
 				C67C2C1323B34D6F00FDE0E9 /* LoginView.swift in Sources */,
@@ -574,6 +586,7 @@
 				DEVELOPMENT_TEAM = 6C688DY2VC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fluminus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,6 +607,7 @@
 				DEVELOPMENT_TEAM = 6C688DY2VC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fluminus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

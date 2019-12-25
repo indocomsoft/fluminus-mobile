@@ -78,7 +78,7 @@ struct LoginView: View {
                 case let .failure(error):
                     self.showAlert = true
                     self.alertTitle = "Error"
-                    self.alertMessage = "\(error)"
+                    self.alertMessage = error.localizedDescription
                 }
             }) {}
             .store(in: &cancellables)

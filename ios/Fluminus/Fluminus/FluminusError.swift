@@ -19,3 +19,14 @@ enum FluminusError: Error {
     case strongReference
     case keychain(Status)
 }
+
+extension FluminusError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .unauthorized: return "Wrong username/password"
+        case let .afError(error): return error.errorDescription
+        case let .keychain(error): return error.description
+        default: return "Other error, please submit a feedback quoting this error: \(self)"
+        }
+    }
+}
