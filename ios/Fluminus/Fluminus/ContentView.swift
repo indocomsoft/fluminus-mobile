@@ -9,17 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var account: Account = .shared
+
+    @ViewBuilder
     var body: some View {
-        NavigationView {
+        if account.isLoggedIn {
+            HomeView()
+        } else {
             LoginView()
         }
     }
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
 #endif

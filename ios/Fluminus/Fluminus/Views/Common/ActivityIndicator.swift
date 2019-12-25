@@ -38,9 +38,9 @@ struct ActivityIndicator: View {
 }
 
 #if DEBUG
-struct ActivityIndicator_Previews: PreviewProvider {
-    static var previews: some View {
-        ActivityIndicator(isShown: .constant(true))
+    struct ActivityIndicator_Previews: PreviewProvider {
+        static var previews: some View {
+            ActivityIndicator(isShown: .constant(true))
+        }
     }
-}
 #endif

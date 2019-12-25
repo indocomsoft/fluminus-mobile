@@ -8,6 +8,7 @@
 
 import Alamofire
 import Foundation
+import KeychainAccess
 
 enum FluminusError: Error {
     case unauthorized
@@ -15,4 +16,6 @@ enum FluminusError: Error {
     case wrongStatusCode(statusCode: Int)
     case parsing
     case afError(AFError)
+    case strongReference
+    case keychain(Status)
 }
