@@ -15,6 +15,7 @@
 		C67C2C0E23B3329F00FDE0E9 /* FluminusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0D23B3329F00FDE0E9 /* FluminusError.swift */; };
 		C67C2C1323B34D6F00FDE0E9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1223B34D6F00FDE0E9 /* LoginView.swift */; };
 		C67C2C1523B34EE700FDE0E9 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1423B34EE700FDE0E9 /* ActivityIndicator.swift */; };
+		C67C2C1823B362ED00FDE0E9 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1723B362ED00FDE0E9 /* Account.swift */; };
 		C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */; };
 		C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */; };
 		C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */; };
@@ -51,6 +52,7 @@
 		C67C2C0D23B3329F00FDE0E9 /* FluminusError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluminusError.swift; sourceTree = "<group>"; };
 		C67C2C1223B34D6F00FDE0E9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C67C2C1423B34EE700FDE0E9 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		C67C2C1723B362ED00FDE0E9 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluminus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +99,6 @@
 		C67C2C0223B2519400FDE0E9 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C67C2C0023B1F88A00FDE0E9 /* Domain.swift */,
 				C67C2C0323B251A700FDE0E9 /* Auth.swift */,
 				C67C2C0523B252F000FDE0E9 /* Constants.swift */,
 				C67C2C0B23B3312C00FDE0E9 /* AFHelper.swift */,
@@ -130,6 +131,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		C67C2C1623B3587500FDE0E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C67C2C0023B1F88A00FDE0E9 /* Domain.swift */,
+				C67C2C1723B362ED00FDE0E9 /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C6BC5D5A23B1D4F500FDE0E9 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 		C6BC5D6523B1D4F500FDE0E9 /* Fluminus */ = {
 			isa = PBXGroup;
 			children = (
+				C67C2C1623B3587500FDE0E9 /* Models */,
 				C67C2C0F23B34D3F00FDE0E9 /* Views */,
 				C67C2C0223B2519400FDE0E9 /* API */,
 				C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */,
@@ -372,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67C2C0C23B3312C00FDE0E9 /* AFHelper.swift in Sources */,
+				C67C2C1823B362ED00FDE0E9 /* Account.swift in Sources */,
 				C67C2C0423B251A700FDE0E9 /* Auth.swift in Sources */,
 				C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */,
 				C67C2C1323B34D6F00FDE0E9 /* LoginView.swift in Sources */,
