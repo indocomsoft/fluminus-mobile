@@ -13,6 +13,8 @@
 		C67C2C0923B2632700FDE0E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C67C2C0823B2632700FDE0E9 /* Alamofire */; };
 		C67C2C0C23B3312C00FDE0E9 /* AFHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0B23B3312C00FDE0E9 /* AFHelper.swift */; };
 		C67C2C0E23B3329F00FDE0E9 /* FluminusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C0D23B3329F00FDE0E9 /* FluminusError.swift */; };
+		C67C2C1323B34D6F00FDE0E9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1223B34D6F00FDE0E9 /* LoginView.swift */; };
+		C67C2C1523B34EE700FDE0E9 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C2C1423B34EE700FDE0E9 /* ActivityIndicator.swift */; };
 		C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */; };
 		C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */; };
 		C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC5D6A23B1D4F500FDE0E9 /* ContentView.swift */; };
@@ -47,6 +49,8 @@
 		C67C2C0523B252F000FDE0E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C67C2C0B23B3312C00FDE0E9 /* AFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHelper.swift; sourceTree = "<group>"; };
 		C67C2C0D23B3329F00FDE0E9 /* FluminusError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluminusError.swift; sourceTree = "<group>"; };
+		C67C2C1223B34D6F00FDE0E9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C67C2C1423B34EE700FDE0E9 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		C6BC5D6323B1D4F500FDE0E9 /* Fluminus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluminus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,31 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		C67C2C0F23B34D3F00FDE0E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C67C2C1023B34D5400FDE0E9 /* Common */,
+				C67C2C1123B34D5900FDE0E9 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C67C2C1023B34D5400FDE0E9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C67C2C1423B34EE700FDE0E9 /* ActivityIndicator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C67C2C1123B34D5900FDE0E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C67C2C1223B34D6F00FDE0E9 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		C6BC5D5A23B1D4F500FDE0E9 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +153,7 @@
 		C6BC5D6523B1D4F500FDE0E9 /* Fluminus */ = {
 			isa = PBXGroup;
 			children = (
+				C67C2C0F23B34D3F00FDE0E9 /* Views */,
 				C67C2C0223B2519400FDE0E9 /* API */,
 				C6BC5D6623B1D4F500FDE0E9 /* AppDelegate.swift */,
 				C6BC5D6823B1D4F500FDE0E9 /* SceneDelegate.swift */,
@@ -344,8 +374,10 @@
 				C67C2C0C23B3312C00FDE0E9 /* AFHelper.swift in Sources */,
 				C67C2C0423B251A700FDE0E9 /* Auth.swift in Sources */,
 				C6BC5D6723B1D4F500FDE0E9 /* AppDelegate.swift in Sources */,
+				C67C2C1323B34D6F00FDE0E9 /* LoginView.swift in Sources */,
 				C67C2C0E23B3329F00FDE0E9 /* FluminusError.swift in Sources */,
 				C6BC5D6923B1D4F500FDE0E9 /* SceneDelegate.swift in Sources */,
+				C67C2C1523B34EE700FDE0E9 /* ActivityIndicator.swift in Sources */,
 				C6BC5D6B23B1D4F500FDE0E9 /* ContentView.swift in Sources */,
 				C67C2C0123B1F88A00FDE0E9 /* Domain.swift in Sources */,
 				C67C2C0623B252F000FDE0E9 /* Constants.swift in Sources */,

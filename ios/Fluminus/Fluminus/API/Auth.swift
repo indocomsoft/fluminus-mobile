@@ -40,8 +40,10 @@ enum Auth {
                 }
                 let adfsBody: Parameters = [
                     "grant_type": "authorization_code",
-                    "client_id": Constants.clientId, "resource": Constants.resource,
-                    "redirect_uri": Constants.redirect, "code": code,
+                    "client_id": Constants.clientId,
+                    "resource": Constants.resource,
+                    "redirect_uri": Constants.redirect,
+                    "code": code,
                 ]
                 let headers = HTTPHeaders(["Ocp-Apim-Subscription-Key": Constants.ocmApimSubscriptionKey])
                 return AFHelper.request(Constants.apiBaseUrl.appendingPathComponent("/login/adfstoken"),

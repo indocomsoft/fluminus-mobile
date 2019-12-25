@@ -19,11 +19,12 @@ enum Constants {
     private static let vafsBaseUrl = URL(string: "https://vafs.nus.edu.sg/adfs/oauth2/authorize")!
     static let vafsURL: URL = {
         var urlComponents = URLComponents(url: vafsBaseUrl, resolvingAgainstBaseURL: true)!
-        urlComponents
-            .queryItems = [URLQueryItem(name: "response_type", value: "code"),
-                           URLQueryItem(name: "client_id", value: clientId),
-                           URLQueryItem(name: "redirect_uri", value: redirect),
-                           URLQueryItem(name: "resource", value: resource)]
+        urlComponents.queryItems = [
+            URLQueryItem(name: "response_type", value: "code"),
+            URLQueryItem(name: "client_id", value: clientId),
+            URLQueryItem(name: "redirect_uri", value: redirect),
+            URLQueryItem(name: "resource", value: resource),
+        ]
         return urlComponents.url!
     }()
 

@@ -45,9 +45,11 @@ enum AFHelper {
                                                                             FluminusError> {
         Deferred {
             Future<String, FluminusError> { promise in
-                print("test")
                 request.response(queue: scheduler) { dataResponse in
                     guard let response = dataResponse.response else {
+                        if let error = dataResponse.error {
+                            return promise(.failure(.afError(error)))
+                        }
                         return promise(.failure(.unexpectedNil))
                     }
                     guard response.statusCode == 302 else {
@@ -65,8 +67,8 @@ enum AFHelper {
     }
 
     static func getResponseDecodable<T: Decodable>(_ request: DataRequest, of _: T.Type = T.self,
-                                                   decoder: DataDecoder = JSONDecoder()) -> AnyPublisher<T,
-                                                                                                         FluminusError> {
+                                                   decoder: DataDecoder = JSONDecoder())
+        -> AnyPublisher<T, FluminusError> {
         Deferred {
             Future<T, FluminusError> { promise in
                 request.responseDecodable(of: T.self, queue: scheduler, decoder: decoder) { dataResponse in
