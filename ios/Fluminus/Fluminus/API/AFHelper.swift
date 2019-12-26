@@ -11,6 +11,15 @@ import Combine
 import Foundation
 
 enum AFHelper {
+    private static let jsonDecoder: JSONDecoder = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(formatter)
+        return decoder
+    }()
+
     private class NoRedirectSessionDelegate: SessionDelegate {
         override func urlSession(_: URLSession, task _: URLSessionTask,
                                  willPerformHTTPRedirection _: HTTPURLResponse,
@@ -67,7 +76,7 @@ enum AFHelper {
     }
 
     static func getResponseDecodable<T: Decodable>(_ request: DataRequest, of _: T.Type = T.self,
-                                                   decoder: DataDecoder = JSONDecoder())
+                                                   decoder: DataDecoder = jsonDecoder)
         -> AnyPublisher<T, FluminusError> {
         Deferred {
             Future<T, FluminusError> { promise in

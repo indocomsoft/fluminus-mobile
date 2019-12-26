@@ -42,10 +42,14 @@ class Account: ObservableObject {
         Auth.login(username: username, password: password)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
+                guard let self = self else {
+                    return
+                }
                 switch completion {
                 case .failure(.unauthorized):
-                    self?.isLoggedIn = false
-                    self?.accessToken = nil
+                    self.delete()
+                        .sink(receiveCompletion: { _ in }, receiveValue: {})
+                        .store(in: &self.cancellables)
                 default: break
                 }
             }) { [weak self] in self?.accessToken = $0 }

@@ -6,9 +6,10 @@
 //  Copyright © 2019 Julius. All rights reserved.
 //
 
+import Combine
 import Foundation
 
-struct Module: Codable {
+struct Module: Codable, Identifiable {
     struct Access: Codable {
         let full: Bool
         let read: Bool
@@ -45,5 +46,14 @@ struct Module: Codable {
         case name = "courseName"
         case term
         case access
+    }
+
+    func getAnnouncements(loginToken: LoginToken, archived: Bool = false)
+        -> AnyPublisher<[Announcement], FluminusError> {
+        let archivedPath = archived ? "Archived" : "NonArchived"
+        let path = "/announcement/\(archivedPath)/\(id)?sortby=displayFrom%20ASC"
+        return loginToken.api(path: path, of: [Announcement].self)
+            .map { $0.map { announcement in announcement.removingHTMLTags() ?? announcement } }
+            .eraseToAnyPublisher()
     }
 }

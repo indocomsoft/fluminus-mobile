@@ -14,6 +14,7 @@ enum Auth {
     /// Obtains an access token
     static func login(username: String, password: String) -> AnyPublisher<LoginToken,
                                                                           FluminusError> {
+        HTTPCookieStorage.shared.cookies?.forEach(HTTPCookieStorage.shared.deleteCookie)
         let credential: Parameters = [
             "UserName": username,
             "Password": password,
